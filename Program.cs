@@ -4,15 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Donnez le nom de l'étudiant svp");
-            string nomEtudiant = Console.ReadLine();
-            Console.WriteLine("Donnez le prénom de l'étudiant svp");
-            string prenomEtudiant = Console.ReadLine();
+
             Console.WriteLine("Donnez le numéro de l'étudiant en chiffre svp!");
-            int numeroEtudiant = Int32.Parse(Console.ReadLine());
+            int nbEtudiantACreer = Int32.Parse(Console.ReadLine());
 
-            Etudiant etudiant = new Etudiant(numeroEtudiant, nomEtudiant, prenomEtudiant);
+            while (nbEtudiantACreer > 0)
+            {
+                Console.WriteLine("Donnez le nom de l'étudiant svp");
+                string nomEtudiant = Console.ReadLine();
+                Console.WriteLine("Donnez le prénom de l'étudiant svp");
+                string prenomEtudiant = Console.ReadLine();
 
+                Etudiant etudiant = new Etudiant(nomEtudiant, prenomEtudiant);
+
+                Console.WriteLine(etudiant);
+            }
         }
     }
 }
