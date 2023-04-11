@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Donnez le nombre d'étudiant à créer");
+
+            Console.WriteLine("Donnez le numéro de l'étudiant en chiffre svp!");
             int nbEtudiantACreer = Int32.Parse(Console.ReadLine());
 
-            while(nbEtudiantACreer > 0)
+            while (nbEtudiantACreer > 0)
             {
                 Console.WriteLine("Donnez le nom de l'étudiant svp");
                 string nomEtudiant = Console.ReadLine();
